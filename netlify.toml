@@ -1,8 +1,8 @@
 # netlify.toml
 [build]
   base = ""  # My base directory
-  publish = "backend" 
-  #command = "node backend/server.js"  # Replace with your backend build command
+  publish = "backend/" 
+  command = "node backend/server.js"  # Replace with your backend build command
   #command = "npm run build && node backend/server.js"
   #functions = "backend/"  # Path to the backend build output directory
 
@@ -11,6 +11,7 @@
   directory = "netlify/functions"
   #external_node_modules = ["express"]
   #node_bundler = "esbuild"
+  included_files = ["backend/build/static/js/*.js","backend/build/static/media/*.jpg","backend/build/image/*.jpg","backend/build/index.html"]
 
 [[redirects]]
   force = true
