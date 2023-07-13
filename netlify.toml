@@ -11,7 +11,7 @@
   directory = "netlify/functions"
   #external_node_modules = ["express"]
   #node_bundler = "esbuild"
-  included_files = ["backend/build/static/js/*.js","backend/build/static/media/*.jpg","backend/build/image/*.jpg","backend/build/index.html"]
+  included_files = ["backend/build/static/js/*.js","backend/build/image/*.jpg","backend/build/index.html"]
 
 [[redirects]]
   force = true
