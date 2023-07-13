@@ -31,7 +31,7 @@ app.use("/", (req, res) => {
 
 app.listen(process.env.PORT || PORT, async () => {
   await connectDB();
-  console.log(`server is running at ${PORT}`)
+  console.log(`server is running at PORT: ${PORT} OR PORT: ${process.env.PORT}`)
 })
 
 // module.exports.handler = serverless(app)
