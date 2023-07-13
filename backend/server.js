@@ -4,7 +4,7 @@ const truckRouter = require('./routes/truckRoutes')
 const connectDB = require('./mongoConnection')
 const uploadRouter = require('./routes/uploadRouter');
 const userRoute = require('./routes/users')
-// const PORT = 3001
+const PORT = 3001
 const app = express()
 const path = require('path')
 const serverless = require("serverless-http")
@@ -29,9 +29,9 @@ app.use("/", (req, res) => {
 // res.send('hello trucks')
 // })
 
-// app.listen(process.env.PORT || PORT, async () => {
-//   await connectDB();
-//   console.log(`server is running at ${PORT}`)
-// })
+app.listen(process.env.PORT || PORT, async () => {
+  await connectDB();
+  console.log(`server is running at ${PORT}`)
+})
 
-module.exports.handler = serverless(app)
+// module.exports.handler = serverless(app)
