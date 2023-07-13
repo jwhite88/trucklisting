@@ -4,6 +4,6 @@
   publish = "backend/" 
   command = "node backend/server.js"  # Replace with your backend build command
   #command = "npm run build && node backend/server.js"
-  #functions = "backend/"  # Path to the backend build output directory
+  functions = "backend/"  # Path to the backend build output directory
 
 
