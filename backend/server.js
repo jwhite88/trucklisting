@@ -13,7 +13,7 @@ app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use(express.static(path.join(__dirname, "../build")))
+app.use(express.static(path.join(__dirname, "./build")))
 
 
 app.use('/truck', truckRouter)
@@ -21,7 +21,7 @@ app.use('/imageUpload', uploadRouter);
 app.use('/users', userRoute);
 
 app.use("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../build/index.html"))
+  res.sendFile(path.join(__dirname, "./build/index.html"))
 })
 
 // app.get('/', (req, res) => {

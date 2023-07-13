@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/static/js/main.00ff8ab3.js",
+    "main.js": "/static/js/main.e171222e.js",
     "static/media/scania.jpg": "/static/media/scania.8e0a284f7c3a472e4666.jpg",
     "static/media/kenworth.jpg": "/static/media/kenworth.002a43f48aff7a903b78.jpg",
     "index.html": "/index.html",
-    "main.00ff8ab3.js.map": "/static/js/main.00ff8ab3.js.map"
+    "main.e171222e.js.map": "/static/js/main.e171222e.js.map"
   },
   "entrypoints": [
-    "static/js/main.00ff8ab3.js"
+    "static/js/main.e171222e.js"
   ]
 }
